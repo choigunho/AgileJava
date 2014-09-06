@@ -21,19 +21,22 @@ public class CourseSession extends Session {
 //	private int numberOfCredits;
 //	private GradingStrategy gradingStrategy = new RegularGradingStrategy();
 	
-	public static CourseSession create(
-			String department,
-			String number,
-			Date startDate) {
-		return new CourseSession(department, number, startDate);
+//	public static CourseSession create(String department, String number, Date startDate) {
+//		return new CourseSession(department, number, startDate);
+//	}
+	public static Session create(Course course, Date startDate) {
+		incrementCount();
+		return new CourseSession(course, startDate);
 	}
 	
-	protected CourseSession(String department, String number, Date startDate) {
+	
+	
+	protected CourseSession(Course course, Date startDate) {
 //		this.department = department;
 //		this.number = number;
 //		this.startDate = startDate;
-		super(department, number, startDate);
-		CourseSession.incrementCount();
+		super(course, startDate);
+//		CourseSession.incrementCount();
 	}
 	
 	static private void incrementCount() {

@@ -1,6 +1,7 @@
 package sis.report;
 
 import sis.studentinfo.CourseSession;
+import sis.studentinfo.Session;
 import sis.studentinfo.Student;
 import static sis.report.ReporterConstant.NEWLINE;
 //import java.util.*;
@@ -13,9 +14,9 @@ class RosterReporter {
 	static final String ROSTER_REPORT_FOOTER = 
 			NEWLINE + "# students = ";
 	
-	private CourseSession session;
+	private Session session;
 	
-	RosterReporter(CourseSession session) {
+	RosterReporter(Session session) {
 		this.session = session;
 	}
 	
