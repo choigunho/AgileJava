@@ -35,6 +35,7 @@ public class Student {
 	private String lastName;
 	private boolean isHonors = false;
 	private GradingStrategy gradingStrategy = new BasicGradingStrategy();
+	private String id;
 	final static Logger logger = Logger.getLogger(Student.class.getName());
 	
 	public Student(String fullName) {
@@ -164,5 +165,13 @@ public class Student {
 		
 	void setGradingStrategy(GradingStrategy gradingStrategy) {
 		this.gradingStrategy = gradingStrategy;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getId() {
+		return id;
 	}
 }
