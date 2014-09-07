@@ -1,7 +1,8 @@
 package sis.studentinfo;
 
 public class Performance {
-	private int[] tests;
+	private int[] tests = {};
+	
 	public void setNumberOfTests(int numberOfTests) {
 		tests = new int[numberOfTests];
 	}
@@ -15,9 +16,11 @@ public class Performance {
 	}
 	
 	public double average() {
-		double total = 0.0;
+		if(tests.length == 0)
+			return 0.0;
+		int total = 0;
 		for(int score: tests)
 			total += score;
-		return total/tests.length;
+		return (double)total / tests.length;
 	}
 }
