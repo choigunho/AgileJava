@@ -72,8 +72,6 @@ abstract public class Session implements Comparable<Session>, Iterable<Student> 
 	
 	private void log(Exception e) {
 		// to do
-		
-		
 	}
 	
 	public URL getUrl() {
