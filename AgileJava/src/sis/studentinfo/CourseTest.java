@@ -16,5 +16,17 @@ public class CourseTest extends TestCase {
 		
 		Course courseB = new Course("ARTH", "330");
 		assertFalse(courseA.equals(courseB));
+		
+		// reflexivity
+		assertEquals(courseA, courseA);
+		
+		// transitivity
+		Course courseAPrime2 = new Course("NURS", "201");
+		assertEquals(courseAPrime, courseAPrime2);
+		
+		
+		
+		// comparison to null
+		assertFalse(courseA.equals(null));
 	}
 }
