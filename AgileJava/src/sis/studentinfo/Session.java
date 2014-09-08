@@ -109,4 +109,8 @@ abstract public class Session implements Comparable<Session>, Iterable<Student> 
 	public Iterator<Student> iterator() {
 		return students.iterator();
 	}
+
+	public int getNumberOfCredits() {
+		return numberOfCredits;
+	}
 }
