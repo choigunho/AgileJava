@@ -9,3 +9,5 @@ public class AllTests {
 		return suite;
 	}
 }
+
+// test
