@@ -24,3 +24,5 @@ public class CourseReport {
 		return builder.toString();
 	}
 }
+
+// course report
